@@ -14,7 +14,10 @@ function Home() {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Manuel Puchner's portfolio" />
+        <meta
+          name="description"
+          content="Hi, I'm Manuel Puchner and this is my personal portfolio. I'm a young self taught developer, currently visiting HTL-Leonding and learning React with NextJs"
+        />
         <meta
           name="keywords"
           content="Manuel, Puchner, portfolio, Htl-leonding, personal, website"
