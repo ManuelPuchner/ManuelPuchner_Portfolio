@@ -13,8 +13,16 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Manuel Puchner | Portfolio</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Manuel Puchner's portfolio" />
+        <meta
+          name="keywords"
+          content="Manuel, Puchner, portfolio, Htl-leonding, personal, website"
+        />
+        <meta name="author" content="Manuel Puchner" />
+        <meta name="publisher" content="Manuel Puchner" />
+        <meta name="copyright" content="Manuel Puchner" />
+        <title>Manuel Puchner | Portfolio</title>
       </Head>
 
       {/* fixid position stuff */}
