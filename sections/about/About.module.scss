@@ -31,10 +31,28 @@
       transform: translateX(2rem);
     }
     .img {
+      padding: 5px !important;
       object-fit: contain;
       width: 100% !important;
       position: relative !important;
       height: unset !important;
+      position: relative;
+      --offset: 3px;
+      --offset-negative: calc(var(--offset) * -1);
+      --blur: 2px;
+      filter: drop-shadow(
+          var(--offset) var(--offset) var(--blur) var(--theme-color)
+        )
+        drop-shadow(
+          var(--offset-negative) var(--offset-negative) var(--blur)
+            var(--theme-color)
+        )
+        drop-shadow(
+          var(--offset-negative) var(--offset) var(--blur) var(--theme-color)
+        )
+        drop-shadow(
+          var(--offset) var(--offset-negative) var(--blur) var(--theme-color)
+        );
     }
 
     #bg {
@@ -66,7 +84,6 @@
         transform: translateX(0);
       }
       #bg {
-        
         transform: translate(-50%, 1.4rem);
         height: 88%;
       }

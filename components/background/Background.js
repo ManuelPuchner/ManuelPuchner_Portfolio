@@ -12,26 +12,11 @@ function Background() {
     "rgb(21, 20, 24)",
     "rgb(245, 245, 255)",
   ];
-
-  const [height, setHeight] = useState(0);
   var counter = 0;
-  useEffect(() => {
-    setHeight(document.getElementById("__next").offsetHeight);
-    const handleResize = () => {
-      if (counter % 5 === 0) {
-        setHeight(document.getElementById("__next").offsetHeight);
-      }
-      counter++;
-    }
-    handleResize()
-    const resizeObserver = new ResizeObserver((entries) => {
-      handleResize()
-    });
-    resizeObserver.observe(document.body);
-  }, [counter]);
+
 
   return (
-    <div className={styles.bgWrapper} style={{ height: height }}>
+    <div className={styles.bgWrapper}>
       <div className={styles.bg}>
         {/* big shapes */}
         <BackgroundShape id={shapestyles._1} />
