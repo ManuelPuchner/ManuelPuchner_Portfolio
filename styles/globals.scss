@@ -38,3 +38,7 @@ h6 {
   --theme-color: #35ff68;
   --parallax-offsetY: 0;
 }
+
+.carousel.carousel-slider {
+  overflow: unset !important;
+}

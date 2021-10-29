@@ -5,11 +5,30 @@
     font-size: 1.75rem;
   }
 }
+
 .flexWrapper {
   display: flex;
 
+  &:nth-child(2n + 1) {
+    .carouselWrapper {
+      margin-left: 1rem;
+    }
+  }
+  &:nth-child(2n) {
+    .carouselWrapper {
+      margin-right: 1rem;
+    }
+  }
+  .carouselWrapper {
+    width: 100%;
+    margin-bottom: 3rem;
+    .img {
+      border-radius: 0.875rem;
+    }
+  }
+
   .text {
-    width: calc(35% + 1rem);
+    width: 100%;
     color: rgb(21, 20, 24);
     padding: 1rem;
 
@@ -68,6 +87,10 @@
     text-align: center;
     .flexWrapper {
       flex-direction: column;
+      .carouselWrapper {
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
     .links {
       display: flex;
