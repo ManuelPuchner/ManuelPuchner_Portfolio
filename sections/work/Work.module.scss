@@ -86,7 +86,11 @@
     color: rgb(21, 20, 24);
     text-align: center;
     .flexWrapper {
+      padding-bottom: 4rem;
       flex-direction: column;
+      &:nth-child(2n + 1) {
+        flex-direction: column-reverse;
+      }
       .carouselWrapper {
         margin-left: 0;
         margin-right: 0;

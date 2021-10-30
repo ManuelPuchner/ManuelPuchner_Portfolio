@@ -49,19 +49,19 @@ function Work() {
           <p>Info: now changing from React to NextJs</p>
 
           <div className={styles.links}>
-            {/* <button
-              href="http://manuelpuchner.ddns.net:3000"
+            <button
+              href="http://manuelpuchner.ddns.net:3300"
               onClick={openButtonLink}
             >
               View Demo <FiChevronRight className={styles.buttonIcon} />
-            </button> */}
-            {/* <button
-              href="https://github.com/ManuelPuchner/"
+            </button>
+            <button
+              href="https://github.com/ManuelPuchner/SocialMediaApp"
               onClick={openButtonLink}
             >
               Visit the GitHub repo{" "}
               <FiChevronRight className={styles.buttonIcon} />
-            </button> */}
+            </button>
           </div>
         </div>
         <div className={styles.carouselWrapper}>
