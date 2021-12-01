@@ -65,15 +65,15 @@ function SocialsSidebar() {
             <FiGithub className={styles.socialIcon} />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
-            href="https://twitter.com/manuelpuchner_"
+            href="https://twitter.com/"
             rel="noreferrer"
             target="_blank"
           >
             <FiTwitter className={styles.socialIcon} />
           </a>
-        </li>
+        </li> */}
       </ul>
     </aside>
   );

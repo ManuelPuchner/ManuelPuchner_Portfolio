@@ -45,8 +45,7 @@ function Work() {
         <div className={styles.text}>
           <h2>Social media app</h2>
           <p>Here i tried to realize a login system.</p>
-          <p>Future updates: Creating posts and comments</p>
-          <p>Info: now changing from React to NextJs</p>
+          <p>New Update: creating text posts, style to be added . . .</p>
 
           <div className={styles.links}>
             <button
