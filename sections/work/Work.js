@@ -49,7 +49,7 @@ function Work() {
 
           <div className={styles.links}>
             <button
-              href="http://manuelpuchner.ddns.net:3300"
+              href="https://manuelpuchner.ddns.net/projects/social-media-app"
               onClick={openButtonLink}
             >
               View Demo <FiChevronRight className={styles.buttonIcon} />
