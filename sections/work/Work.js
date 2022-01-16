@@ -25,19 +25,13 @@ function Work() {
           <p>Here I tested to connect to mongodb with the nextjs framework</p>
 
           <div className={styles.links}>
-            <button
-              href="http://manuelpuchner.ddns.net:3000"
-              onClick={openButtonLink}
-            >
+            <a href="http://manuelpuchner.ddns.net:3000">
               View Demo <FiChevronRight className={styles.buttonIcon} />
-            </button>
-            <button
-              href="https://github.com/ManuelPuchner/test-mern-app"
-              onClick={openButtonLink}
-            >
+            </a>
+            <a href="https://github.com/ManuelPuchner/test-mern-app">
               Visit the GitHub repo{" "}
               <FiChevronRight className={styles.buttonIcon} />
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -48,19 +42,13 @@ function Work() {
           <p>New Update: creating text posts, style to be added . . .</p>
 
           <div className={styles.links}>
-            <button
-              href="/projects/socialmediaapp"
-              onClick={openButtonLink}
-            >
+            <a href="/projects/socialmediaapp">
               View Demo <FiChevronRight className={styles.buttonIcon} />
-            </button>
-            <button
-              href="https://github.com/ManuelPuchner/SocialMediaApp"
-              onClick={openButtonLink}
-            >
+            </a>
+            <a href="https://github.com/ManuelPuchner/SocialMediaApp">
               Visit the GitHub repo{" "}
               <FiChevronRight className={styles.buttonIcon} />
-            </button>
+            </a>
           </div>
         </div>
         <div className={styles.carouselWrapper}>
