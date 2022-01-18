@@ -7,4 +7,12 @@ module.exports = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  async rewrites() {
+    return [
+      {
+        source: "/projects/socialmediaapp/:path*",
+        destination: "http://localhost:3300/projects/socialmediaapp/:path*", // Proxy to Backend
+      },
+    ];
+  },
 };
