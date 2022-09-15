@@ -13,6 +13,10 @@ module.exports = {
         source: "/projects/socialmediaapp/:path*",
         destination: "http://localhost:3300/projects/socialmediaapp/:path*", // Proxy to Backend
       },
+      {
+        source: '/nic-bar/:path*',
+        destination: 'http://localhost:8080/nic-bar/:path*'
+      }
     ];
   },
 };
