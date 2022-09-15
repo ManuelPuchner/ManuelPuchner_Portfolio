@@ -6,6 +6,7 @@ import styles from "./About.module.scss";
 
 function About() {
   const [opacity, setOpacity] = useState(1);
+  const [age, setAge] = useState();
   useEffect(() => {
     // changing the opacity based on the scrollposition
     const aboutSection = document.getElementById("about");
@@ -23,6 +24,14 @@ function About() {
       }
     };
     window.addEventListener("scroll", handleScroll);
+
+    const getAge = async () => {
+      const res = await fetch("/api/age");
+      const data = await res.json();
+      setAge(data.age);
+    };
+
+    getAge();
 
     // on unmount
     return () => {
@@ -44,7 +53,7 @@ function About() {
           <h1>Hi, I&apos;m Manuel</h1>
           <h2>Developer and Photographer</h2>
           <div className={styles.desktopDescription}>
-            <p>I&apos;m 15 years old and currently attending HTL-Leonding</p>
+            <p>I&apos;m {age} years old and currently attending HTL-Leonding</p>
             <p>Currently, I&apos;m learning React and Next.js</p>
             <p>At the moment trying ro improve my coding skills . . .</p>
           </div>

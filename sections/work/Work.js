@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { FiChevronRight } from "react-icons/fi";
 import styles from "./Work.module.scss";
 import CustomCarousel from "../../components/CustomSlider/CustomSlider";
